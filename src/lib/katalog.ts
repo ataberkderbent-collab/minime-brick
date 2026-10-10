@@ -107,7 +107,7 @@ export const PARCALAR: Parca[] = PARCA_VERISI.map((p) => ({
   ...p,
   grup: grupBul(p.kod),
   stok: TUKENDI.has(p.kod) ? 0 : ORNEK_STOK,
-  gorsel: `/parcalar/${p.kategori}/${p.kod}.png`,
+  gorsel: `${process.env.NEXT_PUBLIC_TABAN ?? ''}/parcalar/${p.kategori}/${p.kod}.png`,
 }));
 
 const PARCA_HARITASI = new Map(PARCALAR.map((p) => [p.kod, p]));
