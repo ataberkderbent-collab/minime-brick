@@ -7,6 +7,7 @@ import { ContactShadows, OrbitControls } from '@react-three/drei';
 import { CERCEVE_RENKLERI, type Cerceve, type CerceveRengiId, type FigurSecimi, type KartId, icOlcu, yerlesim } from '@/lib/katalog';
 import { FigurModel } from './Figur';
 import { kartTuvali } from './arkaplan';
+import Studyo from './Studyo';
 
 export type Kart = { tur: 'hazir'; id: KartId; baslik: string; altYazi: string } | { tur: 'yukle'; url: string; ad: string };
 
@@ -112,7 +113,8 @@ export function CerceveSahnesi({ cerceve, cerceveRengi, kart, figurler, seciliSl
 
   return (
     <>
-      <ambientLight intensity={1.05} />
+      <Studyo siddet={0.8} />
+      <ambientLight intensity={0.8} />
       <directionalLight position={[-W, H * 0.2, 20]} intensity={0.45} color="#ffd9a8" />
       <directionalLight
         position={[W * 0.4, H * 0.7, 40]}
@@ -173,8 +175,15 @@ export function CerceveSahnesi({ cerceve, cerceveRengi, kart, figurler, seciliSl
               onPointerOut={() => imleci(false)}
             >
               <planeGeometry args={[Math.min(yer.aralik - 0.2, 3.6), 5.4]} />
-              <meshBasicMaterial color={secili ? '#e2503a' : '#7d756a'} transparent opacity={secili ? 0.09 : tamam ? 0 : 0.14} />
+              <meshBasicMaterial color="#7d756a" transparent opacity={tamam ? 0 : 0.14} />
             </mesh>
+            {/* Seçili figür: ayağının altında ince halka */}
+            {secili && (
+              <mesh position={[0, yer.ayakY + 0.02, 0.05]} rotation={[-Math.PI / 2, 0, 0]} raycast={() => null}>
+                <ringGeometry args={[1.05, 1.22, 48]} />
+                <meshBasicMaterial color="#e2503a" transparent opacity={0.85} side={THREE.DoubleSide} />
+              </mesh>
+            )}
             {tamam && (
               <group
                 position={[0, yer.ayakY, FIGUR_DERINLIK]}
@@ -222,10 +231,9 @@ export default function Sahne({ className, ...rest }: SahneProps) {
     <div className={className}>
       <Canvas
         key={cerceve.id}
-        flat
         shadows
         dpr={[1, 2]}
-        camera={{ position: [0, 0, uzaklik], fov: 35, near: 1, far: 600 }}
+        camera={{ position: [uzaklik * 0.28, uzaklik * 0.12, uzaklik * 0.96], fov: 35, near: 1, far: 600 }}
         gl={{ preserveDrawingBuffer: true, antialias: true }}
         onPointerMissed={() => imleci(false)}
       >

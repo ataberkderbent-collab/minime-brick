@@ -1,1405 +1,1405 @@
 {
 "K-Y1": {
 "kategori": "yuz",
-"renk": "#dcc91e",
+"renk": "#c1ad1b",
 "en": 37,
 "boy": 43
 },
 "K-Y2": {
 "kategori": "yuz",
-"renk": "#e2c204",
+"renk": "#c19e20",
 "en": 37,
 "boy": 44
 },
 "K-Y3": {
 "kategori": "yuz",
-"renk": "#ecd634",
+"renk": "#eee25d",
 "en": 37,
 "boy": 43
 },
 "K-Y4": {
 "kategori": "yuz",
-"renk": "#ecdb2d",
+"renk": "#c9b65b",
 "en": 37,
 "boy": 43
 },
 "K-Y5": {
 "kategori": "yuz",
-"renk": "#e9d824",
+"renk": "#c4b026",
 "en": 38,
 "boy": 43
 },
 "K-Y6": {
 "kategori": "yuz",
-"renk": "#fbe442",
+"renk": "#faec68",
 "en": 37,
 "boy": 43
 },
 "K-Y7": {
 "kategori": "yuz",
-"renk": "#ecc345",
+"renk": "#c29b4e",
 "en": 38,
 "boy": 42
 },
 "K-Y8": {
 "kategori": "yuz",
-"renk": "#f4d74f",
+"renk": "#f6e36b",
 "en": 36,
 "boy": 43
 },
 "K-Y9": {
 "kategori": "yuz",
-"renk": "#fad81e",
+"renk": "#fbe86c",
 "en": 35,
 "boy": 42
 },
 "K-Y10": {
 "kategori": "yuz",
-"renk": "#fce440",
+"renk": "#fcee70",
 "en": 36,
 "boy": 44
 },
 "K-Y11": {
 "kategori": "yuz",
-"renk": "#efde1c",
+"renk": "#f4ed5f",
 "en": 38,
 "boy": 45
 },
 "K-Y12": {
 "kategori": "yuz",
-"renk": "#fad820",
+"renk": "#fae76d",
 "en": 35,
 "boy": 45
 },
 "K-Y13": {
 "kategori": "yuz",
-"renk": "#fce54f",
+"renk": "#fceb69",
 "en": 38,
 "boy": 46
 },
 "K-Y14": {
 "kategori": "yuz",
-"renk": "#e1ce3b",
+"renk": "#bdaf5b",
 "en": 36,
 "boy": 42
 },
 "K-Y15": {
 "kategori": "yuz",
-"renk": "#edd830",
+"renk": "#c79a5f",
 "en": 38,
 "boy": 42
 },
 "K-Y16": {
 "kategori": "yuz",
-"renk": "#bab25b",
+"renk": "#939485",
 "en": 36,
 "boy": 43
 },
 "K-Y17": {
 "kategori": "yuz",
-"renk": "#f3dc39",
+"renk": "#ebdd7c",
 "en": 36,
 "boy": 43
 },
 "K-Y18": {
 "kategori": "yuz",
-"renk": "#e9d829",
+"renk": "#c4ad34",
 "en": 36,
 "boy": 42
 },
 "E-Y1": {
 "kategori": "yuz",
-"renk": "#ead420",
+"renk": "#ece15e",
 "en": 37,
 "boy": 44
 },
 "E-Y2": {
 "kategori": "yuz",
-"renk": "#ead822",
+"renk": "#f2ed60",
 "en": 37,
 "boy": 44
 },
 "E-Y3": {
 "kategori": "yuz",
-"renk": "#e5d22f",
+"renk": "#c8b940",
 "en": 36,
 "boy": 43
 },
 "E-Y4": {
 "kategori": "yuz",
-"renk": "#eac521",
+"renk": "#dfad71",
 "en": 37,
 "boy": 44
 },
 "E-Y5": {
 "kategori": "yuz",
-"renk": "#e9ca43",
+"renk": "#e5ce5f",
 "en": 37,
 "boy": 45
 },
 "E-Y6": {
 "kategori": "yuz",
-"renk": "#e3cf20",
+"renk": "#c4b127",
 "en": 35,
 "boy": 43
 },
 "E-Y7": {
 "kategori": "yuz",
-"renk": "#edda33",
+"renk": "#f1e464",
 "en": 36,
 "boy": 43
 },
 "E-Y8": {
 "kategori": "yuz",
-"renk": "#e7d327",
+"renk": "#bcaa27",
 "en": 36,
 "boy": 43
 },
 "E-Y9": {
 "kategori": "yuz",
-"renk": "#ecdb27",
+"renk": "#c7b34f",
 "en": 37,
 "boy": 44
 },
 "E-Y10": {
 "kategori": "yuz",
-"renk": "#e7ce20",
+"renk": "#f0e36b",
 "en": 38,
 "boy": 46
 },
 "E-Y11": {
 "kategori": "yuz",
-"renk": "#e3cb22",
+"renk": "#c3a72f",
 "en": 36,
 "boy": 43
 },
 "E-Y12": {
 "kategori": "yuz",
-"renk": "#e7d72c",
+"renk": "#e2d85b",
 "en": 36,
 "boy": 43
 },
 "E-Y13": {
 "kategori": "yuz",
-"renk": "#c9bb5d",
+"renk": "#99958c",
 "en": 36,
 "boy": 44
 },
 "E-Y14": {
 "kategori": "yuz",
-"renk": "#c8b75e",
+"renk": "#95958c",
 "en": 36,
 "boy": 44
 },
 "E-Y15": {
 "kategori": "yuz",
-"renk": "#e6cf23",
+"renk": "#c5ac1f",
 "en": 36,
 "boy": 43
 },
 "E-Y16": {
 "kategori": "yuz",
-"renk": "#e0bc0e",
+"renk": "#b38e15",
 "en": 35,
 "boy": 43
 },
 "E-Y17": {
 "kategori": "yuz",
-"renk": "#e3ce25",
+"renk": "#b59426",
 "en": 36,
 "boy": 43
 },
 "E-Y18": {
 "kategori": "yuz",
-"renk": "#eed12a",
+"renk": "#eeb85d",
 "en": 36,
 "boy": 44
 },
 "E-Y19": {
 "kategori": "yuz",
-"renk": "#d3bd2e",
+"renk": "#a09733",
 "en": 36,
 "boy": 43
 },
 "E-Y20": {
 "kategori": "yuz",
-"renk": "#c2b030",
+"renk": "#888331",
 "en": 36,
 "boy": 43
 },
 "E-Y21": {
 "kategori": "yuz",
-"renk": "#dbbe29",
+"renk": "#ac822c",
 "en": 36,
 "boy": 44
 },
 "E-Y22": {
 "kategori": "yuz",
-"renk": "#e1cb34",
+"renk": "#bca953",
 "en": 37,
 "boy": 43
 },
 "E-Y23": {
 "kategori": "yuz",
-"renk": "#e9cc3a",
+"renk": "#b49d47",
 "en": 37,
 "boy": 42
 },
 "E-Y24": {
 "kategori": "yuz",
-"renk": "#decd2d",
+"renk": "#b1a52d",
 "en": 35,
 "boy": 42
 },
 "E-Y25": {
 "kategori": "yuz",
-"renk": "#e5d136",
+"renk": "#aa9f49",
 "en": 36,
 "boy": 43
 },
 "E-Y26": {
 "kategori": "yuz",
-"renk": "#efc340",
+"renk": "#b89857",
 "en": 36,
 "boy": 43
 },
 "E-Y27": {
 "kategori": "yuz",
-"renk": "#edbd1f",
+"renk": "#947b28",
 "en": 37,
 "boy": 45
 },
 "C-Y1": {
 "kategori": "yuz",
-"renk": "#e2d32c",
+"renk": "#eee763",
 "en": 36,
 "boy": 42
 },
 "C-Y2": {
 "kategori": "yuz",
-"renk": "#e1d24c",
+"renk": "#e6dd5c",
 "en": 36,
 "boy": 42
 },
 "C-Y3": {
 "kategori": "yuz",
-"renk": "#ecd826",
+"renk": "#c5ab5b",
 "en": 36,
 "boy": 42
 },
 "C-Y4": {
 "kategori": "yuz",
-"renk": "#e7d530",
+"renk": "#f1e867",
 "en": 36,
 "boy": 42
 },
 "C-Y5": {
 "kategori": "yuz",
-"renk": "#e1d14d",
+"renk": "#e7db63",
 "en": 37,
 "boy": 42
 },
 "C-Y6": {
 "kategori": "yuz",
-"renk": "#e1cc2c",
+"renk": "#c3a441",
 "en": 36,
 "boy": 42
 },
 "C-Y7": {
 "kategori": "yuz",
-"renk": "#e0d14c",
+"renk": "#e7de64",
 "en": 37,
 "boy": 42
 },
 "C-Y8": {
 "kategori": "yuz",
-"renk": "#e2d34c",
+"renk": "#e9e25d",
 "en": 37,
 "boy": 42
 },
 "K-S1": {
 "kategori": "sac",
-"renk": "#535552",
+"renk": "#292b2b",
 "en": 44,
 "boy": 48
 },
 "K-S2": {
 "kategori": "sac",
-"renk": "#3d3f3e",
+"renk": "#252828",
 "en": 49,
 "boy": 47
 },
 "K-S3": {
 "kategori": "sac",
-"renk": "#525654",
+"renk": "#252726",
 "en": 48,
 "boy": 43
 },
 "K-S4": {
 "kategori": "sac",
-"renk": "#3f4140",
+"renk": "#202322",
 "en": 41,
 "boy": 42
 },
 "K-S5": {
 "kategori": "sac",
-"renk": "#303333",
+"renk": "#222525",
 "en": 42,
 "boy": 44
 },
 "K-S6": {
 "kategori": "sac",
-"renk": "#6f6e6c",
+"renk": "#61615f",
 "en": 45,
 "boy": 41
 },
 "K-S7": {
 "kategori": "sac",
-"renk": "#414442",
+"renk": "#242727",
 "en": 39,
 "boy": 42
 },
 "K-S8": {
 "kategori": "sac",
-"renk": "#464847",
+"renk": "#1d2121",
 "en": 40,
 "boy": 42
 },
 "K-S9": {
 "kategori": "sac",
-"renk": "#474a48",
+"renk": "#202524",
 "en": 37,
 "boy": 41
 },
 "K-S10": {
 "kategori": "sac",
-"renk": "#656764",
+"renk": "#242828",
 "en": 44,
 "boy": 44
 },
 "K-S11": {
 "kategori": "sac",
-"renk": "#575a56",
+"renk": "#2a2e2c",
 "en": 45,
 "boy": 48
 },
 "K-S12": {
 "kategori": "sac",
-"renk": "#8a8a88",
+"renk": "#454847",
 "en": 43,
 "boy": 47
 },
 "K-S13": {
 "kategori": "sac",
-"renk": "#282c2c",
+"renk": "#202425",
 "en": 50,
 "boy": 42
 },
 "K-S14": {
 "kategori": "sac",
-"renk": "#353736",
+"renk": "#242727",
 "en": 50,
 "boy": 39
 },
 "K-S15": {
 "kategori": "sac",
-"renk": "#3c3e3d",
+"renk": "#1f2323",
 "en": 50,
 "boy": 39
 },
 "K-S16": {
 "kategori": "sac",
-"renk": "#4f3a36",
+"renk": "#3d2a26",
 "en": 50,
 "boy": 40
 },
 "K-S17": {
 "kategori": "sac",
-"renk": "#695853",
+"renk": "#46302c",
 "en": 50,
 "boy": 42
 },
 "K-S18": {
 "kategori": "sac",
-"renk": "#503a36",
+"renk": "#3e2a26",
 "en": 50,
 "boy": 42
 },
 "K-S19": {
 "kategori": "sac",
-"renk": "#4e3b35",
+"renk": "#3e2a25",
 "en": 49,
 "boy": 40
 },
 "K-S20": {
 "kategori": "sac",
-"renk": "#938782",
+"renk": "#72615a",
 "en": 47,
 "boy": 43
 },
 "K-S21": {
 "kategori": "sac",
-"renk": "#685852",
+"renk": "#3e2a25",
 "en": 46,
 "boy": 42
 },
 "K-S22": {
 "kategori": "sac",
-"renk": "#939393",
+"renk": "#929392",
 "en": 46,
 "boy": 45
 },
 "K-S23": {
 "kategori": "sac",
-"renk": "#7d736e",
+"renk": "#3f2522",
 "en": 43,
 "boy": 41
 },
 "K-S24": {
 "kategori": "sac",
-"renk": "#73645e",
+"renk": "#5b4a45",
 "en": 48,
 "boy": 40
 },
 "K-S25": {
 "kategori": "sac",
-"renk": "#563d39",
+"renk": "#432622",
 "en": 49,
 "boy": 39
 },
 "K-S26": {
 "kategori": "sac",
-"renk": "#543e38",
+"renk": "#452a25",
 "en": 49,
 "boy": 40
 },
 "K-S27": {
 "kategori": "sac",
-"renk": "#6d5348",
+"renk": "#5a392c",
 "en": 47,
 "boy": 39
 },
 "K-S28": {
 "kategori": "sac",
-"renk": "#5c3a2e",
+"renk": "#502b20",
 "en": 44,
 "boy": 41
 },
 "K-S29": {
 "kategori": "sac",
-"renk": "#745648",
+"renk": "#623e2e",
 "en": 44,
 "boy": 44
 },
 "K-S30": {
 "kategori": "sac",
-"renk": "#654537",
+"renk": "#5a3627",
 "en": 49,
 "boy": 44
 },
 "K-S31": {
 "kategori": "sac",
-"renk": "#755c53",
+"renk": "#5d3629",
 "en": 47,
 "boy": 43
 },
 "K-S32": {
 "kategori": "sac",
-"renk": "#653e30",
+"renk": "#5a3226",
 "en": 42,
 "boy": 44
 },
 "K-S33": {
 "kategori": "sac",
-"renk": "#684635",
+"renk": "#5f3e2d",
 "en": 42,
 "boy": 42
 },
 "K-S34": {
 "kategori": "sac",
-"renk": "#674336",
+"renk": "#644133",
 "en": 47,
 "boy": 45
 },
 "K-S35": {
 "kategori": "sac",
-"renk": "#96928a",
+"renk": "#93846e",
 "en": 47,
 "boy": 42
 },
 "K-S36": {
 "kategori": "sac",
-"renk": "#a87552",
+"renk": "#985829",
 "en": 44,
 "boy": 42
 },
 "K-S37": {
 "kategori": "sac",
-"renk": "#9c5c2d",
+"renk": "#955426",
 "en": 49,
 "boy": 38
 },
 "K-S38": {
 "kategori": "sac",
-"renk": "#95664b",
+"renk": "#8c502b",
 "en": 46,
 "boy": 40
 },
 "K-S39": {
 "kategori": "sac",
-"renk": "#b78765",
+"renk": "#9e603a",
 "en": 34,
 "boy": 40
 },
 "K-S40": {
 "kategori": "sac",
-"renk": "#c7b297",
+"renk": "#b69874",
 "en": 43,
 "boy": 38
 },
 "K-S41": {
 "kategori": "sac",
-"renk": "#b5936d",
+"renk": "#a77a4e",
 "en": 37,
 "boy": 38
 },
 "K-S42": {
 "kategori": "sac",
-"renk": "#bf9a79",
+"renk": "#b48b68",
 "en": 31,
 "boy": 40
 },
 "K-S43": {
 "kategori": "sac",
-"renk": "#dddf83",
+"renk": "#e3de7e",
 "en": 44,
 "boy": 39
 },
 "K-S44": {
 "kategori": "sac",
-"renk": "#dadb70",
+"renk": "#d0d476",
 "en": 49,
 "boy": 39
 },
 "K-S45": {
 "kategori": "sac",
-"renk": "#d3d593",
+"renk": "#c9d086",
 "en": 44,
 "boy": 39
 },
 "K-S46": {
 "kategori": "sac",
-"renk": "#dde083",
+"renk": "#d2d470",
 "en": 43,
 "boy": 42
 },
 "K-S47": {
 "kategori": "sac",
-"renk": "#dadd8a",
+"renk": "#d6d67a",
 "en": 40,
 "boy": 45
 },
 "K-S48": {
 "kategori": "sac",
-"renk": "#c6c890",
+"renk": "#bdbd90",
 "en": 45,
 "boy": 45
 },
 "K-S49": {
 "kategori": "sac",
-"renk": "#ced091",
+"renk": "#c0c18c",
 "en": 47,
 "boy": 46
 },
 "K-S50": {
 "kategori": "sac",
-"renk": "#dcda8c",
+"renk": "#d8d586",
 "en": 41,
 "boy": 45
 },
 "K-S51": {
 "kategori": "sac",
-"renk": "#b7b182",
+"renk": "#aca671",
 "en": 49,
 "boy": 37
 },
 "K-S52": {
 "kategori": "sac",
-"renk": "#b6b180",
+"renk": "#aca772",
 "en": 48,
 "boy": 38
 },
 "K-S53": {
 "kategori": "sac",
-"renk": "#bbb68f",
+"renk": "#aea979",
 "en": 41,
 "boy": 41
 },
 "K-S54": {
 "kategori": "sac",
-"renk": "#bab791",
+"renk": "#b3b287",
 "en": 41,
 "boy": 44
 },
 "K-S55": {
 "kategori": "sac",
-"renk": "#ae3431",
+"renk": "#a51e1c",
 "en": 49,
 "boy": 41
 },
 "K-S56": {
 "kategori": "sac",
-"renk": "#864743",
+"renk": "#80403c",
 "en": 45,
 "boy": 41
 },
 "K-S57": {
 "kategori": "sac",
-"renk": "#9b827b",
+"renk": "#7a4945",
 "en": 42,
 "boy": 45
 },
 "K-S58": {
 "kategori": "sac",
-"renk": "#b0afa1",
+"renk": "#733e3e",
 "en": 34,
 "boy": 44
 },
 "K-S59": {
 "kategori": "sac",
-"renk": "#76251f",
+"renk": "#75241e",
 "en": 47,
 "boy": 42
 },
 "K-S60": {
 "kategori": "sac",
-"renk": "#a8a8c4",
+"renk": "#908fb5",
 "en": 49,
 "boy": 44
 },
 "K-S61": {
 "kategori": "sac",
-"renk": "#87b08b",
+"renk": "#259732",
 "en": 50,
 "boy": 44
 },
 "K-S62": {
 "kategori": "sac",
-"renk": "#9b9e9c",
+"renk": "#898b8a",
 "en": 46,
 "boy": 39
 },
 "K-S63": {
 "kategori": "sac",
-"renk": "#6e706e",
+"renk": "#525552",
 "en": 49,
 "boy": 44
 },
 "E-S1": {
 "kategori": "sac",
-"renk": "#b1b2aa",
+"renk": "#3b3f3f",
 "en": 40,
 "boy": 45
 },
 "E-S2": {
 "kategori": "sac",
-"renk": "#bdc0b7",
+"renk": "#444848",
 "en": 40,
 "boy": 45
 },
 "E-S3": {
 "kategori": "sac",
-"renk": "#898d8a",
+"renk": "#292d2d",
 "en": 42,
 "boy": 45
 },
 "E-S4": {
 "kategori": "sac",
-"renk": "#6d6f6e",
+"renk": "#272a2b",
 "en": 46,
 "boy": 45
 },
 "E-S5": {
 "kategori": "sac",
-"renk": "#afb0a7",
+"renk": "#393c3b",
 "en": 52,
 "boy": 45
 },
 "E-S6": {
 "kategori": "sac",
-"renk": "#343939",
+"renk": "#232627",
 "en": 47,
 "boy": 45
 },
 "E-S7": {
 "kategori": "sac",
-"renk": "#b0b1aa",
+"renk": "#343837",
 "en": 51,
 "boy": 45
 },
 "E-S8": {
 "kategori": "sac",
-"renk": "#aeb0a7",
+"renk": "#2b2f2f",
 "en": 45,
 "boy": 44
 },
 "E-S9": {
 "kategori": "sac",
-"renk": "#adafa6",
+"renk": "#353837",
 "en": 49,
 "boy": 49
 },
 "E-S10": {
 "kategori": "sac",
-"renk": "#b4b6ae",
+"renk": "#414443",
 "en": 44,
 "boy": 47
 },
 "E-S11": {
 "kategori": "sac",
-"renk": "#4f5351",
+"renk": "#2b2f2d",
 "en": 51,
 "boy": 47
 },
 "E-S12": {
 "kategori": "sac",
-"renk": "#717573",
+"renk": "#353939",
 "en": 50,
 "boy": 47
 },
 "E-S13": {
 "kategori": "sac",
-"renk": "#858784",
+"renk": "#2b2e30",
 "en": 48,
 "boy": 48
 },
 "E-S14": {
 "kategori": "sac",
-"renk": "#969993",
+"renk": "#414543",
 "en": 46,
 "boy": 49
 },
 "E-S15": {
 "kategori": "sac",
-"renk": "#b6b7b0",
+"renk": "#373839",
 "en": 45,
 "boy": 47
 },
 "E-S16": {
 "kategori": "sac",
-"renk": "#736e69",
+"renk": "#443430",
 "en": 41,
 "boy": 49
 },
 "E-S17": {
 "kategori": "sac",
-"renk": "#b4b6aa",
+"renk": "#564b45",
 "en": 47,
 "boy": 49
 },
 "E-S18": {
 "kategori": "sac",
-"renk": "#74726c",
+"renk": "#3f332f",
 "en": 52,
 "boy": 49
 },
 "E-S19": {
 "kategori": "sac",
-"renk": "#645b57",
+"renk": "#4a3735",
 "en": 47,
 "boy": 48
 },
 "E-S20": {
 "kategori": "sac",
-"renk": "#aaaaa1",
+"renk": "#4b3a34",
 "en": 47,
 "boy": 48
 },
 "E-S21": {
 "kategori": "sac",
-"renk": "#93908e",
+"renk": "#4c3f3c",
 "en": 49,
 "boy": 48
 },
 "E-S22": {
 "kategori": "sac",
-"renk": "#645a55",
+"renk": "#473e38",
 "en": 50,
 "boy": 48
 },
 "E-S23": {
 "kategori": "sac",
-"renk": "#6e6762",
+"renk": "#4e3c36",
 "en": 53,
 "boy": 48
 },
 "E-S24": {
 "kategori": "sac",
-"renk": "#958f86",
+"renk": "#674c3e",
 "en": 46,
 "boy": 48
 },
 "E-S25": {
 "kategori": "sac",
-"renk": "#b2b2a9",
+"renk": "#664e43",
 "en": 45,
 "boy": 48
 },
 "E-S26": {
 "kategori": "sac",
-"renk": "#a8a9a0",
+"renk": "#66483a",
 "en": 48,
 "boy": 49
 },
 "E-S27": {
 "kategori": "sac",
-"renk": "#735d51",
+"renk": "#5f3f2f",
 "en": 48,
 "boy": 49
 },
 "E-S28": {
 "kategori": "sac",
-"renk": "#aeaea5",
+"renk": "#5b4133",
 "en": 51,
 "boy": 48
 },
 "E-S29": {
 "kategori": "sac",
-"renk": "#a6a79f",
+"renk": "#604237",
 "en": 49,
 "boy": 50
 },
 "E-S30": {
 "kategori": "sac",
-"renk": "#98968e",
+"renk": "#5e4639",
 "en": 49,
 "boy": 48
 },
 "E-S31": {
 "kategori": "sac",
-"renk": "#b6b6ad",
+"renk": "#604337",
 "en": 53,
 "boy": 48
 },
 "E-S32": {
 "kategori": "sac",
-"renk": "#ada699",
+"renk": "#975d32",
 "en": 47,
 "boy": 48
 },
 "E-S33": {
 "kategori": "sac",
-"renk": "#ac9687",
+"renk": "#9f8059",
 "en": 44,
 "boy": 51
 },
 "E-S34": {
 "kategori": "sac",
-"renk": "#b4b1a5",
+"renk": "#947045",
 "en": 48,
 "boy": 49
 },
 "E-S35": {
 "kategori": "sac",
-"renk": "#ada393",
+"renk": "#96744a",
 "en": 49,
 "boy": 48
 },
 "E-S36": {
 "kategori": "sac",
-"renk": "#bfbda0",
+"renk": "#ada981",
 "en": 52,
 "boy": 48
 },
 "E-S37": {
 "kategori": "sac",
-"renk": "#c1bc9c",
+"renk": "#b3af84",
 "en": 46,
 "boy": 49
 },
 "E-S38": {
 "kategori": "sac",
-"renk": "#c0bd8e",
+"renk": "#b3af7e",
 "en": 51,
 "boy": 49
 },
 "E-S39": {
 "kategori": "sac",
-"renk": "#cfd39d",
+"renk": "#c3c692",
 "en": 48,
 "boy": 50
 },
 "E-S40": {
 "kategori": "sac",
-"renk": "#cacf7b",
+"renk": "#c4c97a",
 "en": 50,
 "boy": 51
 },
 "E-S41": {
 "kategori": "sac",
-"renk": "#c8cb89",
+"renk": "#c1c37e",
 "en": 51,
 "boy": 49
 },
 "E-S42": {
 "kategori": "sac",
-"renk": "#c9cf9e",
+"renk": "#c3c890",
 "en": 45,
 "boy": 50
 },
 "E-S43": {
 "kategori": "sac",
-"renk": "#bdbfb8",
+"renk": "#979b9a",
 "en": 46,
 "boy": 49
 },
 "E-S44": {
 "kategori": "sac",
-"renk": "#a8aca7",
+"renk": "#919797",
 "en": 49,
 "boy": 51
 },
 "E-S45": {
 "kategori": "sac",
-"renk": "#b6b9b1",
+"renk": "#8f9290",
 "en": 48,
 "boy": 51
 },
 "E-S46": {
 "kategori": "sac",
-"renk": "#b7867a",
+"renk": "#af302e",
 "en": 42,
 "boy": 42
 },
 "E-S47": {
 "kategori": "sac",
-"renk": "#d2d6cf",
+"renk": "#b4b4aa",
 "en": 54,
 "boy": 38
 },
 "E-S48": {
 "kategori": "sac",
-"renk": "#808884",
+"renk": "#384967",
 "en": 53,
 "boy": 43
 },
 "T1": {
 "kategori": "ust",
-"renk": "#42332e",
+"renk": "#3a2b29",
 "en": 50,
 "boy": 38
 },
 "T2": {
 "kategori": "ust",
-"renk": "#412f19",
+"renk": "#2b251a",
 "en": 53,
 "boy": 37
 },
 "T3": {
 "kategori": "ust",
-"renk": "#8c939e",
+"renk": "#7892a1",
 "en": 53,
 "boy": 40
 },
 "T4": {
 "kategori": "ust",
-"renk": "#888b63",
+"renk": "#787964",
 "en": 54,
 "boy": 40
 },
 "T5": {
 "kategori": "ust",
-"renk": "#7b7e50",
+"renk": "#5c5e55",
 "en": 53,
 "boy": 38
 },
 "T6": {
 "kategori": "ust",
-"renk": "#7e4d32",
+"renk": "#743133",
 "en": 45,
 "boy": 39
 },
 "T7": {
 "kategori": "ust",
-"renk": "#706b5d",
+"renk": "#68665e",
 "en": 51,
 "boy": 39
 },
 "T8": {
 "kategori": "ust",
-"renk": "#b6bab0",
+"renk": "#a2ada7",
 "en": 43,
 "boy": 39
 },
 "T9": {
 "kategori": "ust",
-"renk": "#33a450",
+"renk": "#2ea051",
 "en": 51,
 "boy": 41
 },
 "T10": {
 "kategori": "ust",
-"renk": "#d5c36b",
+"renk": "#c7be71",
 "en": 51,
 "boy": 40
 },
 "T11": {
 "kategori": "ust",
-"renk": "#743934",
+"renk": "#6c3136",
 "en": 51,
 "boy": 41
 },
 "T12": {
 "kategori": "ust",
-"renk": "#9ba736",
+"renk": "#7e9738",
 "en": 51,
 "boy": 40
 },
 "T13": {
 "kategori": "ust",
-"renk": "#b32311",
+"renk": "#ad1811",
 "en": 52,
 "boy": 40
 },
 "T14": {
 "kategori": "ust",
-"renk": "#b8bc7c",
+"renk": "#b1b87e",
 "en": 51,
 "boy": 39
 },
 "T15": {
 "kategori": "ust",
-"renk": "#488970",
+"renk": "#458373",
 "en": 46,
 "boy": 40
 },
 "T16": {
 "kategori": "ust",
-"renk": "#458080",
+"renk": "#3e7585",
 "en": 51,
 "boy": 40
 },
 "T17": {
 "kategori": "ust",
-"renk": "#918e5c",
+"renk": "#907f62",
 "en": 42,
 "boy": 41
 },
 "T18": {
 "kategori": "ust",
-"renk": "#ac9c6a",
+"renk": "#a8996c",
 "en": 51,
 "boy": 41
 },
 "T19": {
 "kategori": "ust",
-"renk": "#c6c2b1",
+"renk": "#a9a9a2",
 "en": 51,
 "boy": 40
 },
 "T20": {
 "kategori": "ust",
-"renk": "#a8170c",
+"renk": "#a2120c",
 "en": 51,
 "boy": 40
 },
 "T21": {
 "kategori": "ust",
-"renk": "#bb352e",
+"renk": "#b3302d",
 "en": 52,
 "boy": 40
 },
 "T22": {
 "kategori": "ust",
-"renk": "#439579",
+"renk": "#3a8f7b",
 "en": 52,
 "boy": 38
 },
 "T23": {
 "kategori": "ust",
-"renk": "#8d9291",
+"renk": "#7b8891",
 "en": 51,
 "boy": 40
 },
 "T24": {
 "kategori": "ust",
-"renk": "#ccbe83",
+"renk": "#b4a795",
 "en": 45,
 "boy": 40
 },
 "T25": {
 "kategori": "ust",
-"renk": "#8a8a75",
+"renk": "#82827a",
 "en": 52,
 "boy": 42
 },
 "T26": {
 "kategori": "ust",
-"renk": "#44493d",
+"renk": "#3d3f39",
 "en": 42,
 "boy": 40
 },
 "T27": {
 "kategori": "ust",
-"renk": "#99aab0",
+"renk": "#8da1b4",
 "en": 52,
 "boy": 40
 },
 "T28": {
 "kategori": "ust",
-"renk": "#caac7f",
+"renk": "#b48f6b",
 "en": 52,
 "boy": 38
 },
 "T29": {
 "kategori": "ust",
-"renk": "#2765ac",
+"renk": "#2563ad",
 "en": 52,
 "boy": 40
 },
 "T30": {
 "kategori": "ust",
-"renk": "#cab685",
+"renk": "#a2a095",
 "en": 52,
 "boy": 40
 },
 "T31": {
 "kategori": "ust",
-"renk": "#a93513",
+"renk": "#a32012",
 "en": 52,
 "boy": 40
 },
 "T32": {
 "kategori": "ust",
-"renk": "#bc352f",
+"renk": "#b9322e",
 "en": 52,
 "boy": 40
 },
 "T33": {
 "kategori": "ust",
-"renk": "#93a6a8",
+"renk": "#8c9dad",
 "en": 46,
 "boy": 40
 },
 "T34": {
 "kategori": "ust",
-"renk": "#bb4032",
+"renk": "#b63630",
 "en": 52,
 "boy": 41
 },
 "T35": {
 "kategori": "ust",
-"renk": "#5d4981",
+"renk": "#5a4683",
 "en": 41,
 "boy": 39
 },
 "T36": {
 "kategori": "ust",
-"renk": "#df98af",
+"renk": "#da95b4",
 "en": 50,
 "boy": 42
 },
 "T37": {
 "kategori": "ust",
-"renk": "#9cac8d",
+"renk": "#889e9c",
 "en": 50,
 "boy": 40
 },
 "T38": {
 "kategori": "ust",
-"renk": "#c1be95",
+"renk": "#a6a9a2",
 "en": 50,
 "boy": 40
 },
 "T39": {
 "kategori": "ust",
-"renk": "#d5696a",
+"renk": "#cd557a",
 "en": 50,
 "boy": 41
 },
 "T40": {
 "kategori": "ust",
-"renk": "#d9ad8e",
+"renk": "#cb9dad",
 "en": 44,
 "boy": 42
 },
 "T41": {
 "kategori": "ust",
-"renk": "#9b858e",
+"renk": "#867996",
 "en": 50,
 "boy": 41
 },
 "T42": {
 "kategori": "ust",
-"renk": "#8f698d",
+"renk": "#876291",
 "en": 46,
 "boy": 42
 },
 "T43": {
 "kategori": "ust",
-"renk": "#a6b88c",
+"renk": "#9ba99f",
 "en": 50,
 "boy": 41
 },
 "T44": {
 "kategori": "ust",
-"renk": "#a43676",
+"renk": "#9f3379",
 "en": 43,
 "boy": 40
 },
 "T45": {
 "kategori": "ust",
-"renk": "#d09b70",
+"renk": "#bf818e",
 "en": 51,
 "boy": 42
 },
 "T46": {
 "kategori": "ust",
-"renk": "#d3c982",
+"renk": "#c49f97",
 "en": 51,
 "boy": 39
 },
 "T47": {
 "kategori": "ust",
-"renk": "#917413",
+"renk": "#8d7012",
 "en": 52,
 "boy": 42
 },
 "T48": {
 "kategori": "ust",
-"renk": "#cc91a0",
+"renk": "#c58da3",
 "en": 52,
 "boy": 41
 },
 "T49": {
 "kategori": "ust",
-"renk": "#d0d18e",
+"renk": "#b6c773",
 "en": 52,
 "boy": 40
 },
 "T50": {
 "kategori": "ust",
-"renk": "#595a4b",
+"renk": "#52544d",
 "en": 51,
 "boy": 42
 },
 "T51": {
 "kategori": "ust",
-"renk": "#a5849f",
+"renk": "#9a7aa2",
 "en": 52,
 "boy": 42
 },
 "T52": {
 "kategori": "ust",
-"renk": "#e8a1a0",
+"renk": "#e795a3",
 "en": 52,
 "boy": 40
 },
 "T53": {
 "kategori": "ust",
-"renk": "#7e8246",
+"renk": "#415559",
 "en": 44,
 "boy": 42
 },
 "T54": {
 "kategori": "ust",
-"renk": "#596f85",
+"renk": "#396494",
 "en": 51,
 "boy": 42
 },
 "T55": {
 "kategori": "ust",
-"renk": "#bb8e5a",
+"renk": "#a17e60",
 "en": 51,
 "boy": 41
 },
 "T56": {
 "kategori": "ust",
-"renk": "#a5b1b4",
+"renk": "#97a7b8",
 "en": 51,
 "boy": 41
 },
 "T57": {
 "kategori": "ust",
-"renk": "#6ca4a4",
+"renk": "#64a2a9",
 "en": 51,
 "boy": 42
 },
 "T58": {
 "kategori": "ust",
-"renk": "#d4bba5",
+"renk": "#ccb3a6",
 "en": 42,
 "boy": 40
 },
 "T59": {
 "kategori": "ust",
-"renk": "#d69fb9",
+"renk": "#d09abb",
 "en": 51,
 "boy": 41
 },
 "T60": {
 "kategori": "ust",
-"renk": "#ccba79",
+"renk": "#b8aa94",
 "en": 45,
 "boy": 42
 },
 "T61": {
 "kategori": "ust",
-"renk": "#b0beba",
+"renk": "#abbcb8",
 "en": 51,
 "boy": 40
 },
 "T62": {
 "kategori": "ust",
-"renk": "#ca8525",
+"renk": "#b97d2a",
 "en": 44,
 "boy": 38
 },
 "T63": {
 "kategori": "ust",
-"renk": "#b4bc30",
+"renk": "#97b13e",
 "en": 52,
 "boy": 39
 },
 "T64": {
 "kategori": "ust",
-"renk": "#8c9075",
+"renk": "#818177",
 "en": 52,
 "boy": 39
 },
 "T65": {
 "kategori": "ust",
-"renk": "#979d93",
+"renk": "#939695",
 "en": 52,
 "boy": 39
 },
 "T66": {
 "kategori": "ust",
-"renk": "#c2d571",
+"renk": "#b5d578",
 "en": 52,
 "boy": 36
 },
 "T67": {
 "kategori": "ust",
-"renk": "#c8c481",
+"renk": "#acb393",
 "en": 43,
 "boy": 37
 },
 "T68": {
 "kategori": "ust",
-"renk": "#d49e2c",
+"renk": "#c0942f",
 "en": 52,
 "boy": 38
 },
 "T69": {
 "kategori": "ust",
-"renk": "#537f70",
+"renk": "#3f7c72",
 "en": 48,
 "boy": 37
 },
 "T70": {
 "kategori": "ust",
-"renk": "#a3bec3",
+"renk": "#9abbcc",
 "en": 52,
 "boy": 37
 },
@@ -1411,7 +1411,7 @@
 },
 "L2": {
 "kategori": "alt",
-"renk": "#243e64",
+"renk": "#243d64",
 "en": 35,
 "boy": 50
 },
@@ -1423,13 +1423,13 @@
 },
 "L4": {
 "kategori": "alt",
-"renk": "#3380a7",
+"renk": "#3380a6",
 "en": 37,
 "boy": 52
 },
 "L5": {
 "kategori": "alt",
-"renk": "#7d888e",
+"renk": "#7c878d",
 "en": 35,
 "boy": 50
 },
@@ -1453,355 +1453,355 @@
 },
 "L9": {
 "kategori": "alt",
-"renk": "#867a61",
+"renk": "#867961",
 "en": 36,
 "boy": 50
 },
 "L10": {
 "kategori": "alt",
-"renk": "#b0a16e",
+"renk": "#afa06d",
 "en": 35,
 "boy": 51
 },
 "L11": {
 "kategori": "alt",
-"renk": "#c9cccd",
+"renk": "#bbbfc0",
 "en": 32,
 "boy": 47
 },
 "L12": {
 "kategori": "alt",
-"renk": "#b60706",
+"renk": "#b50706",
 "en": 35,
 "boy": 51
 },
 "L13": {
 "kategori": "alt",
-"renk": "#d47f28",
+"renk": "#d17e28",
 "en": 35,
 "boy": 51
 },
 "L14": {
 "kategori": "alt",
-"renk": "#2ca150",
+"renk": "#2ca050",
 "en": 36,
 "boy": 51
 },
 "L15": {
 "kategori": "alt",
-"renk": "#875f9b",
+"renk": "#875e9a",
 "en": 36,
 "boy": 51
 },
 "L16": {
 "kategori": "alt",
-"renk": "#847a92",
+"renk": "#7e7291",
 "en": 38,
 "boy": 50
 },
 "L17": {
 "kategori": "alt",
-"renk": "#cf389d",
+"renk": "#cd389c",
 "en": 35,
 "boy": 51
 },
 "L18": {
 "kategori": "alt",
-"renk": "#d5d9da",
+"renk": "#bfc3c3",
 "en": 35,
 "boy": 40
 },
 "L19": {
 "kategori": "alt",
-"renk": "#e06499",
+"renk": "#df6398",
 "en": 38,
 "boy": 46
 },
 "L20": {
 "kategori": "alt",
-"renk": "#233e62",
+"renk": "#233d61",
 "en": 36,
 "boy": 41
 },
 "L21": {
 "kategori": "alt",
-"renk": "#7194bf",
+"renk": "#7092bd",
 "en": 36,
 "boy": 40
 },
 "L22": {
 "kategori": "alt",
-"renk": "#825c95",
+"renk": "#805b94",
 "en": 34,
 "boy": 40
 },
 "A1": {
 "kategori": "aksesuar",
-"renk": "#e573de",
+"renk": "#e472de",
 "en": 27,
 "boy": 33
 },
 "A2": {
 "kategori": "aksesuar",
-"renk": "#96928d",
+"renk": "#948f8b",
 "en": 15,
 "boy": 46
 },
 "A3": {
 "kategori": "aksesuar",
-"renk": "#cb8dc2",
+"renk": "#c980bf",
 "en": 13,
 "boy": 47
 },
 "A4": {
 "kategori": "aksesuar",
-"renk": "#cde85b",
+"renk": "#c4e654",
 "en": 24,
 "boy": 46
 },
 "A5": {
 "kategori": "aksesuar",
-"renk": "#c7cac9",
+"renk": "#c1c3c2",
 "en": 33,
 "boy": 25
 },
 "A6": {
 "kategori": "aksesuar",
-"renk": "#dadbd4",
+"renk": "#c9c9c2",
 "en": 25,
 "boy": 25
 },
 "A7": {
 "kategori": "aksesuar",
-"renk": "#c11917",
+"renk": "#c01916",
 "en": 28,
 "boy": 32
 },
 "A8": {
 "kategori": "aksesuar",
-"renk": "#db60a5",
+"renk": "#da5fa4",
 "en": 28,
 "boy": 32
 },
 "A9": {
 "kategori": "aksesuar",
-"renk": "#dbdbdb",
+"renk": "#bdbdbd",
 "en": 13,
 "boy": 39
 },
 "A10": {
 "kategori": "aksesuar",
-"renk": "#f3c267",
+"renk": "#f3c96e",
 "en": 20,
 "boy": 43
 },
 "A11": {
 "kategori": "aksesuar",
-"renk": "#e39e2f",
+"renk": "#d38d2a",
 "en": 32,
 "boy": 43
 },
 "A12": {
 "kategori": "aksesuar",
-"renk": "#89a666",
+"renk": "#7ba162",
 "en": 32,
 "boy": 49
 },
 "A13": {
 "kategori": "aksesuar",
-"renk": "#c2a675",
+"renk": "#bda273",
 "en": 33,
 "boy": 45
 },
 "A14": {
 "kategori": "aksesuar",
-"renk": "#b4a37d",
+"renk": "#af9c7b",
 "en": 39,
 "boy": 46
 },
 "A15": {
 "kategori": "aksesuar",
-"renk": "#cab4cc",
+"renk": "#c5adc5",
 "en": 34,
 "boy": 40
 },
 "A16": {
 "kategori": "aksesuar",
-"renk": "#e6a05f",
+"renk": "#d773a1",
 "en": 39,
 "boy": 23
 },
 "A17": {
 "kategori": "aksesuar",
-"renk": "#e19ac4",
+"renk": "#e098c2",
 "en": 29,
 "boy": 51
 },
 "A18": {
 "kategori": "aksesuar",
-"renk": "#c6aaad",
+"renk": "#c07273",
 "en": 11,
 "boy": 37
 },
 "A19": {
 "kategori": "aksesuar",
-"renk": "#c495d4",
+"renk": "#c395d3",
 "en": 32,
 "boy": 36
 },
 "A20": {
 "kategori": "aksesuar",
-"renk": "#99888e",
+"renk": "#897c8c",
 "en": 38,
 "boy": 45
 },
 "A21": {
 "kategori": "aksesuar",
-"renk": "#e59197",
+"renk": "#e59097",
 "en": 26,
 "boy": 30
 },
 "A22": {
 "kategori": "aksesuar",
-"renk": "#d0e7e1",
+"renk": "#c0d8d2",
 "en": 31,
 "boy": 38
 },
 "A23": {
 "kategori": "aksesuar",
-"renk": "#ebb44a",
+"renk": "#e7c571",
 "en": 38,
 "boy": 44
 },
 "A24": {
 "kategori": "aksesuar",
-"renk": "#c2b7ac",
+"renk": "#a1a49f",
 "en": 39,
 "boy": 38
 },
 "A25": {
 "kategori": "aksesuar",
-"renk": "#adb7cb",
+"renk": "#ab96b7",
 "en": 50,
 "boy": 43
 },
 "A26": {
 "kategori": "aksesuar",
-"renk": "#928e92",
+"renk": "#8e868e",
 "en": 42,
 "boy": 35
 },
 "A27": {
 "kategori": "aksesuar",
-"renk": "#c7739f",
+"renk": "#b35a8e",
 "en": 37,
 "boy": 40
 },
 "A28": {
 "kategori": "aksesuar",
-"renk": "#404040",
+"renk": "#3f3f3f",
 "en": 38,
 "boy": 30
 },
 "A29": {
 "kategori": "aksesuar",
-"renk": "#2f3034",
+"renk": "#2d2f32",
 "en": 50,
 "boy": 41
 },
 "A30": {
 "kategori": "aksesuar",
-"renk": "#bc2283",
+"renk": "#ba2181",
 "en": 50,
 "boy": 41
 },
 "A31": {
 "kategori": "aksesuar",
-"renk": "#b51411",
+"renk": "#b41311",
 "en": 50,
 "boy": 33
 },
 "A32": {
 "kategori": "aksesuar",
-"renk": "#d09549",
+"renk": "#cd8f44",
 "en": 40,
 "boy": 43
 },
 "A33": {
 "kategori": "aksesuar",
-"renk": "#b7d2cb",
+"renk": "#acc2bc",
 "en": 25,
 "boy": 39
 },
 "A34": {
 "kategori": "aksesuar",
-"renk": "#d0d4d4",
+"renk": "#bdc1c1",
 "en": 26,
 "boy": 46
 },
 "A35": {
 "kategori": "aksesuar",
-"renk": "#96a6b4",
+"renk": "#8e9ca7",
 "en": 37,
 "boy": 50
 },
 "A36": {
 "kategori": "aksesuar",
-"renk": "#404625",
+"renk": "#3d4023",
 "en": 10,
 "boy": 46
 },
 "A37": {
 "kategori": "aksesuar",
-"renk": "#9e9e9e",
+"renk": "#9b9b9b",
 "en": 37,
 "boy": 28
 },
 "A38": {
 "kategori": "aksesuar",
-"renk": "#9c9d9c",
+"renk": "#989898",
 "en": 37,
 "boy": 36
 },
 "A39": {
 "kategori": "aksesuar",
-"renk": "#686a6c",
+"renk": "#66686b",
 "en": 22,
 "boy": 39
 },
 "A40": {
 "kategori": "aksesuar",
-"renk": "#585f62",
+"renk": "#575f61",
 "en": 32,
 "boy": 44
 },
 "A41": {
 "kategori": "aksesuar",
-"renk": "#626363",
+"renk": "#5c5c5c",
 "en": 37,
 "boy": 36
 },
 "A42": {
 "kategori": "aksesuar",
-"renk": "#757375",
+"renk": "#747275",
 "en": 26,
 "boy": 41
 },
 "A43": {
 "kategori": "aksesuar",
-"renk": "#787578",
+"renk": "#777578",
 "en": 15,
 "boy": 42
 },
 "A44": {
 "kategori": "aksesuar",
-"renk": "#a3c4c0",
+"renk": "#a1c2bd",
 "en": 13,
 "boy": 44
 },
 "A45": {
 "kategori": "aksesuar",
-"renk": "#464746",
+"renk": "#464646",
 "en": 37,
 "boy": 33
 }

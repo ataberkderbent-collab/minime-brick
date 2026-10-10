@@ -266,7 +266,7 @@ img { display: block; }
 
 /* ── 360° inceleme penceresi ── */
 .inceleme-perde { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; padding: 16px; background: rgba(8, 6, 5, 0.7); backdrop-filter: blur(6px); }
-.inceleme { position: relative; width: min(760px, 100%); height: min(640px, 88svh); background: radial-gradient(70% 60% at 50% 40%, #2a2420 0%, #171310 60%, #0f0d0b 100%); border-radius: 26px; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--cam-cizgi-2); }
+.inceleme { position: relative; width: min(760px, 100%); height: min(640px, 88svh); background: radial-gradient(70% 60% at 50% 38%, #4a3f36 0%, #241e19 55%, #120f0d 100%); border-radius: 26px; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--cam-cizgi-2); }
 .inceleme canvas { flex: 1; min-height: 0; touch-action: none; }
 .inceleme-baslik { display: flex; justify-content: space-between; align-items: flex-start; padding: 18px 20px; gap: 12px; }
 .inceleme-baslik strong { display: block; font: 500 24px var(--serif); }

@@ -18,7 +18,7 @@ export default function HeroSahne({ className }: { className?: string }) {
 
   return (
     <div className={className} onPointerDown={() => setDokunuldu(true)}>
-      <Canvas flat shadows dpr={[1, 1.75]} camera={{ position: [uzaklik * 0.35, uzaklik * 0.12, uzaklik], fov: 30, near: 1, far: 600 }} gl={{ antialias: true, alpha: true }}>
+      <Canvas shadows dpr={[1, 1.75]} camera={{ position: [uzaklik * 0.35, uzaklik * 0.12, uzaklik], fov: 30, near: 1, far: 600 }} gl={{ antialias: true, alpha: true }}>
         <Float speed={1.4} rotationIntensity={0.18} floatIntensity={0.9} floatingRange={[-0.6, 0.6]}>
           <group rotation={[0, -0.22, 0]}>
             <CerceveSahnesi

@@ -97,7 +97,12 @@ def kenar_temizle(im, tekrar=3):
 
 def ortalama_renk(im):
     px = list(im.get_flattened_data()) if hasattr(im, 'get_flattened_data') else list(im.getdata())
-    secili = [(r, g, b) for r, g, b, a in px if a > 200 and not (r > 235 and g > 235 and b > 235)]
+    # Beyaz / açık gri (saç görsellerindeki kafa, zemin kalıntısı) ve Lego sarısı (eller, boyun) sayılmaz
+    def dis(r, g, b):
+        if min(r, g, b) > 200 and max(r, g, b) - min(r, g, b) < 40: return True
+        if r > 200 and g > 160 and b < 90 and r - b > 120: return True
+        return False
+    secili = [(r, g, b) for r, g, b, a in px if a > 200 and not dis(r, g, b)]
     if not secili: return '#cccccc'
     # medyan: tek tük gölge / parlama piksellerinden etkilenmez
     kanallar = [sorted(c[i] for c in secili)[len(secili) // 2] for i in range(3)]
