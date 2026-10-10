@@ -268,7 +268,7 @@ a { color: inherit; }
   .kart-izgara { grid-template-columns: repeat(2, 1fr); }
   .secenekler.uc { grid-template-columns: 1fr; }
   .alt-icerik { flex-direction: column; align-items: stretch; gap: 8px; }
-  .alt-dugmeler .birincil, .alt-dugmeler .ikincil { flex: 1; font-size: 14px; padding: 8px 10px; }
+  .alt-dugmeler .birincil, .alt-dugmeler .ikincil { flex: 1; min-width: 0; font-size: 14px; padding: 8px 10px; white-space: normal; }
   .ozet-metin span { white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
   .sahne-alani { height: 58dvh; }
 }

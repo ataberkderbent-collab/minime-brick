@@ -1,6 +1,6 @@
 'use client';
 
-import { Suspense } from 'react';
+import { Suspense, useMemo } from 'react';
 import * as THREE from 'three';
 import { Billboard, RoundedBox, useTexture } from '@react-three/drei';
 import { type FigurSecimi, type Hayvan, type KisiSecimi, hayvanBul, parcaBul, sacStili } from '@/lib/katalog';
@@ -42,27 +42,30 @@ function YuzKaplama({ gorsel }: { gorsel: string }) {
   return (
     <mesh position={[0, 3.03, 0]}>
       <cylinderGeometry args={[0.508, 0.508, 1.0, 48, 1, true, -yay / 2, yay]} />
-      <meshStandardMaterial map={doku} transparent alphaTest={0.08} roughness={0.4} />
+      <meshStandardMaterial map={doku} transparent alphaTest={0.3} roughness={0.4} />
     </mesh>
   );
 }
 
-/** Üst gövde görseli (kollarıyla): gövdenin önüne düzlem olarak */
-function UstKaplama({ gorsel }: { gorsel: string }) {
+/** Üst gövde görseli: kollar atılıp gövdenin ÖN YÜZÜNE kaplanır (baskı / desen görünür) */
+function GovdeKaplama({ gorsel, renk }: { gorsel: string; renk: string }) {
   const doku = useTexture(gorsel);
-  doku.anisotropy = 8;
-  const img = doku.image as { width: number; height: number };
-  const oran = img.width / img.height;
-  let w = 2.72;
-  let h = w / oran;
-  if (h > 1.95) {
-    h = 1.95;
-    w = h * oran;
-  }
+  const on = useMemo(() => {
+    const t = doku.clone();
+    t.anisotropy = 8;
+    t.wrapS = t.wrapT = THREE.ClampToEdgeWrapping;
+    // Görselin ortasındaki gövde bölgesi (kenarlardaki kollar dışarıda kalır)
+    t.repeat.set(0.5, 0.84);
+    t.offset.set(0.25, 0.08);
+    t.needsUpdate = true;
+    return t;
+  }, [doku]);
+  const yan = useMemo(() => new THREE.MeshStandardMaterial({ color: renk, roughness: 0.45 }), [renk]);
+  const onYuz = useMemo(() => new THREE.MeshStandardMaterial({ map: on, roughness: 0.45 }), [on]);
+  // boxGeometry yüz sırası: +x, -x, +y, -y, +z (ön), -z
   return (
-    <mesh position={[0, 2.64 - h / 2, 0.435]}>
-      <planeGeometry args={[w, h]} />
-      <meshStandardMaterial map={doku} transparent alphaTest={0.08} roughness={0.5} side={THREE.DoubleSide} />
+    <mesh position={[0, 1.8, 0]} material={[yan, yan, yan, yan, onYuz, yan]} castShadow receiveShadow>
+      <boxGeometry args={[1.7, 1.4, 0.85]} />
     </mesh>
   );
 }
@@ -120,7 +123,13 @@ function Kisi({ f }: { f: KisiSecimi }) {
     <group scale={1.12 * olcek}>
       <Parca p={[-0.4, 0.55, 0]} s={[0.76, 1.1, 0.8]} c={altRenk} />
       <Parca p={[0.4, 0.55, 0]} s={[0.76, 1.1, 0.8]} c={altRenk} />
-      <Parca p={[0, 1.8, 0]} s={[1.7, 1.4, 0.85]} c={govde} />
+      {ust ? (
+        <Suspense fallback={<Parca p={[0, 1.8, 0]} s={[1.7, 1.4, 0.85]} c={govde} />}>
+          <GovdeKaplama gorsel={ust.gorsel} renk={govde} />
+        </Suspense>
+      ) : (
+        <Parca p={[0, 1.8, 0]} s={[1.7, 1.4, 0.85]} c={govde} />
+      )}
       <Parca p={[-1.12, 1.85, 0]} s={[0.45, 1.25, 0.55]} c={govde} rot={[0, 0, 0.06]} />
       <Parca p={[1.12, 1.85, 0]} s={[0.45, 1.25, 0.55]} c={govde} rot={[0, 0, -0.06]} />
       {[-1.17, 1.17].map((x) => (
@@ -140,7 +149,6 @@ function Kisi({ f }: { f: KisiSecimi }) {
       {!yuz && <Gozler y={3.0} z={0.49} />}
       {f.sac && <Sac kod={f.sac} />}
       <Suspense fallback={null}>{yuz && <YuzKaplama gorsel={yuz.gorsel} />}</Suspense>
-      <Suspense fallback={null}>{ust && <UstKaplama gorsel={ust.gorsel} />}</Suspense>
       <Suspense fallback={null}>{aksesuar && <AksesuarKaplama gorsel={aksesuar.gorsel} />}</Suspense>
     </group>
   );
