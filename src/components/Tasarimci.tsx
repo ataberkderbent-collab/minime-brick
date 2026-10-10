@@ -65,7 +65,7 @@ function rastgeleSec<T>(liste: T[]): T | null {
   return liste.length ? liste[Math.floor(Math.random() * liste.length)] : null;
 }
 
-export default function Tasarimci() {
+export default function Tasarimci({ disSablon }: { disSablon?: { s: Sablon; n: number } | null }) {
   const baslangic = SABLONLAR[0];
   const [cerceveId, setCerceveId] = useState<CerceveId>(baslangic.cerceve);
   const [cerceveRengi, setCerceveRengi] = useState<CerceveRengiId>(baslangic.cerceveRengi);
@@ -197,6 +197,14 @@ export default function Tasarimci() {
     if (dosyaGirdisi.current) dosyaGirdisi.current.value = '';
   };
 
+  useEffect(() => {
+    if (disSablon) {
+      sablonUygula(disSablon.s);
+      document.getElementById('tasarla')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [disSablon?.n]);
+
   const siparisMetni = () =>
     [
       `Çerçeve: ${cerceve.ad} (${cerceve.disEn}×${cerceve.disBoy} cm) · ${CERCEVE_RENKLERI.find((r) => r.id === cerceveRengi)?.ad}`,
@@ -222,6 +230,15 @@ export default function Tasarimci() {
 
   return (
     <section className="tasarimci" id="tasarla" aria-label="Çerçeve tasarım aracı">
+      <div className="tasarimci-bas">
+        <div>
+          <p className="goz">Tasarım aracı</p>
+          <h2>
+            Kendi çerçeveni <em>kur.</em>
+          </h2>
+        </div>
+        <p>Soldaki sahnede gördüğün, sipariş edeceğin şey. Sürükle, çevir, figüre dokun.</p>
+      </div>
       <div className="ana">
         <div className="sahne-alani" aria-label="3B önizleme">
           <Sahne

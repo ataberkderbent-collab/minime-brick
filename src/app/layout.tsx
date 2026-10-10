@@ -1,8 +1,7 @@
 import type { Metadata, Viewport } from 'next';
-import '@fontsource/rubik/500.css';
-import '@fontsource/rubik/700.css';
-import '@fontsource/nunito-sans/400.css';
-import '@fontsource/nunito-sans/600.css';
+import '@fontsource-variable/fraunces/opsz.css';
+import '@fontsource-variable/fraunces/opsz-italic.css';
+import '@fontsource-variable/manrope/wght.css';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -10,7 +9,7 @@ export const metadata: Metadata = {
   description: 'Yüzünü, saçını, kıyafetini seç; baskılı kartını tasarla ve çerçeveni 3B olarak gör.',
 };
 
-export const viewport: Viewport = { width: 'device-width', initialScale: 1, themeColor: '#d6402b' };
+export const viewport: Viewport = { width: 'device-width', initialScale: 1, themeColor: '#0e0c0a' };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

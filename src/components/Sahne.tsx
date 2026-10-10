@@ -3,7 +3,7 @@
 import { Suspense, useEffect, useMemo, useState } from 'react';
 import * as THREE from 'three';
 import { Canvas, type ThreeEvent } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
+import { ContactShadows, OrbitControls } from '@react-three/drei';
 import { CERCEVE_RENKLERI, type Cerceve, type CerceveRengiId, type FigurSecimi, type KartId, icOlcu, yerlesim } from '@/lib/katalog';
 import { FigurModel } from './Figur';
 import { kartTuvali } from './arkaplan';
@@ -84,7 +84,7 @@ function Kutu({ p, s, c, kaba = 0.55 }: { p: [number, number, number]; s: [numbe
   );
 }
 
-interface SahneIciProps {
+export interface SahneIciProps {
   cerceve: Cerceve;
   cerceveRengi: CerceveRengiId;
   kart: Kart;
@@ -95,7 +95,7 @@ interface SahneIciProps {
   onFigur: (i: number) => void;
 }
 
-function CerceveSahnesi({ cerceve, cerceveRengi, kart, figurler, seciliSlot, cam, onSlot, onFigur }: SahneIciProps) {
+export function CerceveSahnesi({ cerceve, cerceveRengi, kart, figurler, seciliSlot, cam, onSlot, onFigur }: SahneIciProps) {
   const { en: W, boy: H } = icOlcu(cerceve);
   const D = cerceve.derinlik;
   const k = cerceve.kenar;
@@ -112,7 +112,8 @@ function CerceveSahnesi({ cerceve, cerceveRengi, kart, figurler, seciliSlot, cam
 
   return (
     <>
-      <ambientLight intensity={1.25} />
+      <ambientLight intensity={1.05} />
+      <directionalLight position={[-W, H * 0.2, 20]} intensity={0.45} color="#ffd9a8" />
       <directionalLight
         position={[W * 0.4, H * 0.7, 40]}
         intensity={1.5}
@@ -172,7 +173,7 @@ function CerceveSahnesi({ cerceve, cerceveRengi, kart, figurler, seciliSlot, cam
               onPointerOut={() => imleci(false)}
             >
               <planeGeometry args={[Math.min(yer.aralik - 0.2, 3.6), 5.4]} />
-              <meshBasicMaterial color={secili ? '#d6402b' : '#7d756a'} transparent opacity={secili ? 0.16 : tamam ? 0 : 0.14} />
+              <meshBasicMaterial color={secili ? '#e2503a' : '#7d756a'} transparent opacity={secili ? 0.09 : tamam ? 0 : 0.14} />
             </mesh>
             {tamam && (
               <group
@@ -192,6 +193,9 @@ function CerceveSahnesi({ cerceve, cerceveRengi, kart, figurler, seciliSlot, cam
           </group>
         );
       })}
+
+      {/* Çerçevenin arkasına düşen yumuşak gölge (koyu stüdyo zemini) */}
+      <ContactShadows position={[0, -H / 2 - k - 0.6, 0]} opacity={0.55} scale={Math.max(W, H) * 2.2} blur={2.6} far={12} color="#000000" />
 
       {/* Ön cam (tıklamayı engellemez) */}
       {cam && (
