@@ -1,45 +1,57 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { Suspense, useEffect, useMemo, useState } from 'react';
 import * as THREE from 'three';
 import { Canvas, type ThreeEvent } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import { type ArkaPlanId, type Cerceve, figurBul, icOlcu } from '@/lib/katalog';
+import { CERCEVE_RENKLERI, type Cerceve, type CerceveRengiId, type FigurSecimi, type KartId, icOlcu, yerlesim } from '@/lib/katalog';
 import { FigurModel } from './Figur';
-import { arkaPlanTuvali } from './arkaplan';
+import { kartTuvali } from './arkaplan';
 
-export type ArkaPlan = { tur: 'hazir'; id: ArkaPlanId } | { tur: 'yukle'; url: string; ad: string };
+export type Kart = { tur: 'hazir'; id: KartId; baslik: string; altYazi: string } | { tur: 'yukle'; url: string; ad: string };
 
-const KENAR_RENGI = '#f4f1ea';
-const ZEMIN_KALINLIK = 0.6;
-/** Figürler arası en geniş aralık (cm); az figürde yan yana toplanır */
-const EN_GENIS_ARALIK = 5.5;
+const PASPARTU_RENGI = '#fbfaf5';
+const PASPARTU_KALINLIK = 0.25;
+const FIGUR_DERINLIK = 0.46;
 
 function imleci(acik: boolean) {
   document.body.style.cursor = acik ? 'pointer' : 'auto';
 }
 
-function useArkaPlanDokusu(kaynak: ArkaPlan, oran: number) {
+function useKartDokusu(kart: Kart, cerceve: Cerceve, figurler: FigurSecimi[]) {
   const [doku, setDoku] = useState<THREE.Texture | null>(null);
-  const anahtar = kaynak.tur === 'hazir' ? `h:${kaynak.id}:${oran.toFixed(3)}` : `y:${kaynak.url}:${oran.toFixed(3)}`;
+  const yer = useMemo(() => yerlesim(cerceve, figurler.length), [cerceve, figurler.length]);
+  // Yazılar değişince tuval yeniden çizilir
+  const anahtar =
+    kart.tur === 'hazir'
+      ? JSON.stringify([kart.id, kart.baslik, kart.altYazi, cerceve.id, figurler.map((f) => f.isim)])
+      : `y:${kart.url}:${cerceve.id}`;
 
   useEffect(() => {
     let iptal = false;
     let yuklenen: THREE.Texture | null = null;
-    if (kaynak.tur === 'hazir') {
-      yuklenen = new THREE.CanvasTexture(arkaPlanTuvali(kaynak.id, oran));
+    if (kart.tur === 'hazir') {
+      const tuval = kartTuvali(kart.id, {
+        baslik: kart.baslik,
+        altYazi: kart.altYazi,
+        baskiEn: cerceve.baskiEn,
+        baskiBoy: cerceve.baskiBoy,
+        isimler: figurler.map((f, i) => ({ x: yer.xler[i], y: yer.isimY, metin: f.isim })),
+      });
+      yuklenen = new THREE.CanvasTexture(tuval);
       yuklenen.colorSpace = THREE.SRGBColorSpace;
       yuklenen.anisotropy = 8;
       setDoku(yuklenen);
     } else {
-      new THREE.TextureLoader().load(kaynak.url, (t) => {
+      new THREE.TextureLoader().load(kart.url, (t) => {
         if (iptal) {
           t.dispose();
           return;
         }
         t.colorSpace = THREE.SRGBColorSpace;
         t.anisotropy = 8;
-        // Çerçeveyi dolduracak biçimde ortadan kırp (yukleme.ts ile aynı kural)
+        // Baskı alanını dolduracak biçimde ortadan kırp (yukleme.ts ile aynı kural)
+        const oran = cerceve.baskiEn / cerceve.baskiBoy;
         const img = t.image as { width: number; height: number };
         const fotoOran = img.width / img.height;
         if (fotoOran > oran) {
@@ -63,36 +75,40 @@ function useArkaPlanDokusu(kaynak: ArkaPlan, oran: number) {
   return doku;
 }
 
-function Kutu({ p, s, c = KENAR_RENGI }: { p: [number, number, number]; s: [number, number, number]; c?: string }) {
+function Kutu({ p, s, c, kaba = 0.55 }: { p: [number, number, number]; s: [number, number, number]; c: string; kaba?: number }) {
   return (
     <mesh position={p} receiveShadow>
       <boxGeometry args={s} />
-      <meshStandardMaterial color={c} roughness={0.55} />
+      <meshStandardMaterial color={c} roughness={kaba} />
     </mesh>
   );
 }
 
-interface CerceveSahnesiProps {
+interface SahneIciProps {
   cerceve: Cerceve;
-  arkaPlan: ArkaPlan;
-  slotlar: (string | null)[];
+  cerceveRengi: CerceveRengiId;
+  kart: Kart;
+  figurler: FigurSecimi[];
   seciliSlot: number | null;
   cam: boolean;
   onSlot: (i: number) => void;
-  onFigur: (figurId: string) => void;
+  onFigur: (i: number) => void;
 }
 
-function CerceveSahnesi({ cerceve, arkaPlan, slotlar, seciliSlot, cam, onSlot, onFigur }: CerceveSahnesiProps) {
+function CerceveSahnesi({ cerceve, cerceveRengi, kart, figurler, seciliSlot, cam, onSlot, onFigur }: SahneIciProps) {
   const { en: W, boy: H } = icOlcu(cerceve);
   const D = cerceve.derinlik;
   const k = cerceve.kenar;
-  const doku = useArkaPlanDokusu(arkaPlan, W / H);
+  const bw = cerceve.baskiEn;
+  const bh = cerceve.baskiBoy;
+  const renk = CERCEVE_RENKLERI.find((r) => r.id === cerceveRengi)?.renk ?? '#f3f0e8';
+  const doku = useKartDokusu(kart, cerceve, figurler);
+  const yer = useMemo(() => yerlesim(cerceve, figurler.length), [cerceve, figurler.length]);
 
-  const n = slotlar.length;
-  const aralik = Math.min(W / n, EN_GENIS_ARALIK);
-  const zeminY = -H / 2 + ZEMIN_KALINLIK;
-  const figurZ = -D / 2 + 1.7;
-  const konumlar = useMemo(() => slotlar.map((_, i) => (i - (n - 1) / 2) * aralik), [slotlar, n, aralik]);
+  const kartZ = -D / 2 + 0.3;
+  const pasZ = kartZ + PASPARTU_KALINLIK / 2;
+  const matYatay = (W - bw) / 2;
+  const matDikey = (H - bh) / 2;
 
   return (
     <>
@@ -112,36 +128,42 @@ function CerceveSahnesi({ cerceve, arkaPlan, slotlar, seciliSlot, cam, onSlot, o
       />
 
       {/* Çerçeve gövdesi */}
-      <Kutu p={[0, H / 2 + k / 2, 0]} s={[W + 2 * k, k, D + 0.4]} />
-      <Kutu p={[0, -H / 2 - k / 2, 0]} s={[W + 2 * k, k, D + 0.4]} />
-      <Kutu p={[-W / 2 - k / 2, 0, 0]} s={[k, H, D + 0.4]} />
-      <Kutu p={[W / 2 + k / 2, 0, 0]} s={[k, H, D + 0.4]} />
+      <Kutu p={[0, H / 2 + k / 2, 0]} s={[W + 2 * k, k, D + 0.4]} c={renk} />
+      <Kutu p={[0, -H / 2 - k / 2, 0]} s={[W + 2 * k, k, D + 0.4]} c={renk} />
+      <Kutu p={[-W / 2 - k / 2, 0, 0]} s={[k, H, D + 0.4]} c={renk} />
+      <Kutu p={[W / 2 + k / 2, 0, 0]} s={[k, H, D + 0.4]} c={renk} />
+      {/* İç duvarlar: kartın arkasındaki zemin */}
+      <Kutu p={[0, 0, kartZ - 0.1]} s={[W, H, 0.1]} c={PASPARTU_RENGI} kaba={0.9} />
 
-      {/* Arka tasarım baskısı */}
-      <mesh position={[0, 0, -D / 2]} receiveShadow>
-        <planeGeometry args={[W, H]} />
-        <meshStandardMaterial
-          map={doku}
-          emissive="#ffffff"
-          emissiveMap={doku}
-          emissiveIntensity={0.55}
-          color={doku ? '#ffffff' : '#d8d2c6'}
-          roughness={0.9}
-        />
+      {/* Baskılı kart */}
+      <mesh position={[0, 0, kartZ]} receiveShadow>
+        <planeGeometry args={[bw, bh]} />
+        <meshStandardMaterial map={doku} emissive="#ffffff" emissiveMap={doku} emissiveIntensity={0.55} color={doku ? '#ffffff' : '#e8e2d6'} roughness={0.9} />
       </mesh>
 
-      {/* Figürlerin durduğu zemin */}
-      <Kutu p={[0, -H / 2 + ZEMIN_KALINLIK / 2, 0]} s={[W, ZEMIN_KALINLIK, D - 0.1]} c="#efe9dc" />
+      {/* Paspartu: kartın etrafını örten karton */}
+      {matDikey > 0.01 && (
+        <>
+          <Kutu p={[0, bh / 2 + matDikey / 2, pasZ]} s={[W, matDikey, PASPARTU_KALINLIK]} c={PASPARTU_RENGI} kaba={0.9} />
+          <Kutu p={[0, -bh / 2 - matDikey / 2, pasZ]} s={[W, matDikey, PASPARTU_KALINLIK]} c={PASPARTU_RENGI} kaba={0.9} />
+        </>
+      )}
+      {matYatay > 0.01 && (
+        <>
+          <Kutu p={[-bw / 2 - matYatay / 2, 0, pasZ]} s={[matYatay, bh, PASPARTU_KALINLIK]} c={PASPARTU_RENGI} kaba={0.9} />
+          <Kutu p={[bw / 2 + matYatay / 2, 0, pasZ]} s={[matYatay, bh, PASPARTU_KALINLIK]} c={PASPARTU_RENGI} kaba={0.9} />
+        </>
+      )}
 
-      {slotlar.map((figurId, i) => {
-        const figur = figurId ? figurBul(figurId) : undefined;
-        const x = konumlar[i];
+      {/* Figürler kartın üstüne yapıştırılmış */}
+      {figurler.map((f, i) => {
         const secili = seciliSlot === i;
+        const x = yer.xler[i];
+        const tamam = f.tur === 'hayvan' ? !!f.hayvan : !!(f.yuz && f.ust && f.alt);
         return (
-          <group key={i} position={[x, zeminY, figurZ]}>
+          <group key={i} position={[x, 0, kartZ]}>
             <mesh
-              rotation={[-Math.PI / 2, 0, 0]}
-              position={[0, 0.02, 0]}
+              position={[0, yer.ayakY + 2.0, 0.03]}
               onClick={(e: ThreeEvent<MouseEvent>) => {
                 e.stopPropagation();
                 onSlot(i);
@@ -149,19 +171,22 @@ function CerceveSahnesi({ cerceve, arkaPlan, slotlar, seciliSlot, cam, onSlot, o
               onPointerOver={() => imleci(true)}
               onPointerOut={() => imleci(false)}
             >
-              <ringGeometry args={[1.25, secili ? 1.75 : 1.55, 40]} />
-              <meshBasicMaterial color={secili ? '#d6402b' : '#9b9384'} transparent opacity={figur && !secili ? 0.25 : 0.9} side={THREE.DoubleSide} />
+              <planeGeometry args={[Math.min(yer.aralik - 0.2, 3.6), 5.4]} />
+              <meshBasicMaterial color={secili ? '#d6402b' : '#7d756a'} transparent opacity={secili ? 0.16 : tamam ? 0 : 0.14} />
             </mesh>
-            {figur && (
+            {tamam && (
               <group
+                position={[0, yer.ayakY, FIGUR_DERINLIK]}
                 onClick={(e: ThreeEvent<MouseEvent>) => {
                   e.stopPropagation();
-                  onFigur(figur.id);
+                  onFigur(i);
                 }}
                 onPointerOver={() => imleci(true)}
                 onPointerOut={() => imleci(false)}
               >
-                <FigurModel figur={figur} />
+                <Suspense fallback={null}>
+                  <FigurModel secim={f} />
+                </Suspense>
               </group>
             )}
           </group>
@@ -175,12 +200,11 @@ function CerceveSahnesi({ cerceve, arkaPlan, slotlar, seciliSlot, cam, onSlot, o
           <meshPhysicalMaterial color="#ffffff" transparent opacity={0.07} roughness={0.05} metalness={0} />
         </mesh>
       )}
-
     </>
   );
 }
 
-export interface SahneProps extends CerceveSahnesiProps {
+export interface SahneProps extends SahneIciProps {
   className?: string;
 }
 
@@ -194,6 +218,7 @@ export default function Sahne({ className, ...rest }: SahneProps) {
     <div className={className}>
       <Canvas
         key={cerceve.id}
+        flat
         shadows
         dpr={[1, 2]}
         camera={{ position: [0, 0, uzaklik], fov: 35, near: 1, far: 600 }}
@@ -208,7 +233,7 @@ export default function Sahne({ className, ...rest }: SahneProps) {
           maxAzimuthAngle={0.9}
           minPolarAngle={0.9}
           maxPolarAngle={2.15}
-          minDistance={uzaklik * 0.35}
+          minDistance={uzaklik * 0.3}
           maxDistance={uzaklik * 1.4}
           target={[0, 0, 0]}
         />

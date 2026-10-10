@@ -1,4 +1,4 @@
-import { type Cerceve, gerekenPiksel, icOlcu } from './katalog';
+import { type Cerceve, baskiOlcu, gerekenPiksel } from './katalog';
 
 export const IZINLI_TURLER = ['image/jpeg', 'image/png', 'image/webp'];
 export const EN_BUYUK_DOSYA_MB = 25;
@@ -16,8 +16,8 @@ export interface YuklemeSonucu {
 }
 
 /**
- * Yüklenen fotoğraf, seçili çerçeve için yeterli mi?
- * Fotoğraf çerçeveyi dolduracak biçimde ortadan kırpılır; kırpılmış bölgenin
+ * Yüklenen baskı tasarımı, seçili çerçevenin baskı alanı için yeterli mi?
+ * Fotoğraf baskı alanını dolduracak biçimde ortadan kırpılır; kırpılmış bölgenin
  * çözünürlüğü en az `enDusukDpi` olmalı. Tarayıcıda kullanıcıya hızlı geri bildirim
  * içindir; sunucuya yükleme eklenince aynı kural sunucuda da uygulanır.
  */
@@ -34,7 +34,7 @@ export function fotografDegerlendir(
   if (dosya.size > EN_BUYUK_DOSYA_MB * 1024 * 1024) {
     return { ...bos, uygun: false, mesaj: `Dosya en çok ${EN_BUYUK_DOSYA_MB} MB olabilir.` };
   }
-  const ic = icOlcu(c);
+  const ic = baskiOlcu(c);
   const cerceveOran = ic.en / ic.boy;
   const fotoOran = genislik / yukseklik;
   const sapma = Math.abs(fotoOran - cerceveOran) / cerceveOran;
@@ -43,7 +43,7 @@ export function fotografDegerlendir(
     return {
       ...bos,
       uygun: false,
-      mesaj: `Fotoğraf bu çerçeve için çok ${yon}. Çerçeve oranı ${ic.en}×${ic.boy} cm; benzer oranda bir fotoğraf seçin.`,
+      mesaj: `Tasarım bu çerçeve için çok ${yon}. Baskı alanı ${ic.en}×${ic.boy} cm; benzer oranda bir tasarım seçin.`,
     };
   }
   // Çerçeveyi dolduran (kırpılmış) bölgenin piksel boyu
